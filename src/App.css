@@ -1,0 +1,187 @@
+body {
+  margin: 0; /* Sin márgenes */
+  height: 100vh; /* Altura del viewport */
+  display: flex; /* Flexbox para centrar contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: #282c34; /* Fondo oscuro */
+  color: #ffffff; /* Color del texto */
+  font-family: Arial, sans-serif; /* Fuente básica */
+}
+
+.App {
+  display: flex; /* Flexbox para el contenedor principal */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+  flex-direction: column; /* Colocar elementos en columna */
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+  padding: 20px; /* Espaciado interno */
+  width: 80%; /* Ancho del contenedor */
+  max-width: 800px; /* Ancho máximo */
+  text-align: center; /* Centrar el texto */
+}
+
+.image-container {
+  position: relative; /* Para el contenedor de la imagen */
+  width: 100%; /* Ancho completo */
+  height: 450px; /* Altura fija para la imagen */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.live-image {
+  width: 100%; /* Ancho del 100% para la imagen */
+  height: 100%; /* Altura del 100% para la imagen */
+  object-fit: cover; /* Mantener la relación de aspecto */
+}
+
+/* Estilos para el chat */
+.chat-container {
+  margin-top: 20px; /* Espaciado superior para el contenedor de chat */
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el chat */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+}
+
+.messages {
+  max-height: 200px; /* Altura máxima para la lista de mensajes */
+  overflow-y: auto; /* Habilitar desplazamiento vertical */
+  background: rgba(red, red, red);/* Fondo semitransparente*/
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+input {
+  width: 70%; /* Ancho del campo de entrada */
+  padding: 10px; /* Espaciado interno */
+  margin-right: 5px; /* Espaciado a la derecha */
+}
+
+button {
+  padding: 10px; /* Espaciado interno para el botón */
+}
+/* Añade estos estilos al final de tu App.css */
+
+.chat-container {
+  margin-top: 20px;
+}
+
+.messages {
+  max-height: 300px; /* Altura máxima del cuadro de mensajes */
+  overflow-y: auto; /* Habilitar el scroll si hay demasiados mensajes */
+  padding: 10px;
+  border-radius: 10px; /* Bordes redondeados */
+  
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  background-color: #80DEEA; /* Color de fondo para los mensajes enviados */
+  align-self: flex-end;
+}
+
+.message.received {
+  background-color: #ffffff; /* Color de fondo para los mensajes recibidos */
+  align-self: flex-start;
+  border: 1px solid #ddd; /* Añadir un borde ligero */
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.file-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #cccccc50;
+  border-radius: 10px;
+  background-color: #f9f9f945;
+}
+
+.file-container h2 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón personalizado de selección de archivos */
+.custom-file-upload {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #80DEEA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.custom-file-upload:hover {
+  background-color: #80DEEA;
+}
+
+/* Estilos para el botón de enviar archivo */
+.send-file-button {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.send-file-button:hover {
+  background-color: #007B9A;
+}
+.messages .message a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.messages .message a:hover {
+  text-decoration: underline;
+}
+
