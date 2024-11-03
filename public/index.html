@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
+    <title>Pantalla Compartida en Vivo</title>
+    <style>
+        /* Estilos para el body */
+        body {
+            margin: 0; /* Sin márgenes */
+            height: 100vh; /* Altura del viewport */
+            display: flex; /* Flexbox para centrar contenido */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            background-color: #000; /* Fondo negro para el área de visualización */
+            color: #fff; /* Color del texto */
+            font-family: Arial, sans-serif; /* Fuente básica */
+        }
+        
+        #root {
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Altura completa */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
